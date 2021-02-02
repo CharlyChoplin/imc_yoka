@@ -13,8 +13,8 @@ import { Picker } from "@react-native-picker/picker";
 
 export default function IMC() {
   const [sexe, setSexe] = useState("homme");
-  const [taille, setTaille] = useState(0);
-  const [poids, setPoids] = useState(0);
+  const [taille, setTaille] = useState();
+  const [poids, setPoids] = useState();
 
   function calculIMC() {
     if (taille.length >= 2 && poids.length >= 2 && taille > 0 && poids > 0) {
